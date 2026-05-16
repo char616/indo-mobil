@@ -108,3 +108,43 @@ section{
 .nav-btn:hover{
   transform: translateY(-3px);
 }
+/* =========================
+   FIX NAVBAR MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-menu{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto; /* kalau sempit banget, bisa scroll horizontal */
+    padding: 8px 0;
+  }
+
+  .nav-menu li{
+    flex-shrink: 0;
+  }
+
+  .nav-menu a{
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .nav-btn{
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
