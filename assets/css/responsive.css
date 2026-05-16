@@ -8,7 +8,7 @@
 
   .hero{
 
-    padding-top: 120px;
+    padding-top: 140px;
 
     min-height: auto;
 
@@ -20,7 +20,7 @@
 
     text-align: center;
 
-    gap: 50px;
+    gap: 60px;
 
   }
 
@@ -68,7 +68,7 @@
 
     grid-template-columns: 1fr;
 
-    gap: 40px;
+    gap: 50px;
 
   }
 
@@ -92,41 +92,85 @@
 
   }
 
-  /* NAVBAR */
+  /* =========================
+     PREMIUM MOBILE NAVBAR
+  ========================= */
 
   .navbar{
 
-    padding: 14px 0;
+    top: 16px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 92%;
+
+    padding: 16px 22px;
+
+    border-radius: 24px;
+
+    background:
+      rgba(10,10,10,.78);
+
+    border:
+      1px solid rgba(255,255,255,.06);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+      0 12px 35px rgba(0,0,0,.35);
 
   }
 
   .nav-wrapper{
 
-    flex-direction: column;
+    display: flex;
 
-    gap: 18px;
+    align-items: center;
+
+    justify-content: space-between;
+
+  }
+
+  .logo{
+
+    font-size: 1.15rem;
+
+    color: white;
 
   }
 
   .nav-menu{
 
-    gap: 14px;
+    display: flex;
 
-    flex-wrap: wrap;
+    align-items: center;
 
-    justify-content: center;
+    gap: 16px;
 
   }
 
   .nav-menu a{
 
-    font-size: .95rem;
+    color:
+      rgba(255,255,255,.72);
+
+    font-size: .88rem;
 
   }
 
+  .nav-menu a:hover{
+
+    color: white;
+
+  }
+
+  /* HIDE WA BUTTON */
+
   .nav-btn{
 
-    width: 100%;
+    display: none;
 
   }
 
@@ -134,7 +178,7 @@
 
   .hero{
 
-    padding-top: 170px;
+    padding-top: 190px;
 
   }
 
@@ -155,6 +199,8 @@
   .hero-buttons{
 
     width: 100%;
+
+    justify-content: center;
 
   }
 
@@ -233,6 +279,12 @@
 
   }
 
+  .footer-social{
+
+    justify-content: center;
+
+  }
+
 }
 
 /* =========================
@@ -240,6 +292,12 @@
 ========================= */
 
 @media (max-width: 480px){
+
+  .hero{
+
+    padding-top: 180px;
+
+  }
 
   .hero-text h2{
 
@@ -255,7 +313,19 @@
 
   .logo{
 
-    font-size: 1.2rem;
+    font-size: 1rem;
+
+  }
+
+  .nav-menu{
+
+    gap: 12px;
+
+  }
+
+  .nav-menu a{
+
+    font-size: .82rem;
 
   }
 
