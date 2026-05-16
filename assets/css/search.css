@@ -1,0 +1,38 @@
+.search-section{
+  padding-top:0;
+}
+
+.search-wrapper{
+
+  background:
+  rgba(255,255,255,0.9);
+
+  backdrop-filter:blur(10px);
+
+  padding:30px;
+
+  border-radius:25px;
+
+  box-shadow:
+  0 15px 40px rgba(0,0,0,0.08);
+
+  display:flex;
+  gap:20px;
+
+}
+
+.search-wrapper input,
+.search-wrapper select{
+
+  width:100%;
+
+  padding:18px;
+
+  border-radius:15px;
+
+  border:
+  1px solid rgba(0,0,0,0.08);
+
+  font-size:16px;
+
+}

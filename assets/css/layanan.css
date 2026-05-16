@@ -1,0 +1,16 @@
+.layanan{
+  background:var(--gray);
+}
+
+.layanan-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.layanan-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}

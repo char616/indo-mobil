@@ -1,0 +1,41 @@
+.tentang{
+  background:#f8f8f8;
+}
+
+.tentang-wrapper{
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:60px;
+
+  align-items:center;
+
+}
+
+.tentang-image img{
+
+  width:100%;
+
+  border-radius:28px;
+
+  box-shadow:
+  0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+.tentang-text h2{
+
+  font-size:60px;
+  margin-bottom:20px;
+
+}
+
+.tentang-text p{
+
+  line-height:1.9;
+  color:#666;
+
+  margin-bottom:35px;
+
+}
