@@ -1,332 +1,113 @@
 /* =========================
-   TABLET
+   MOBILE NAVBAR
 ========================= */
 
-@media (max-width: 992px){
+.navbar{
 
-  /* HERO */
+  top:16px;
 
-  .hero{
+  left:50%;
 
-    padding-top: 140px;
+  transform:translateX(-50%);
 
-    min-height: auto;
+  width:92%;
 
-  }
+  padding:18px 20px;
 
-  .hero-wrapper{
+  border-radius:26px;
 
-    grid-template-columns: 1fr;
+  background:
+  rgba(10,10,10,.82);
 
-    text-align: center;
+  border:
+  1px solid rgba(255,255,255,.06);
 
-    gap: 60px;
+  backdrop-filter:blur(18px);
 
-  }
-
-  .hero-image{
-
-    order: -1;
-
-    max-width: 700px;
-
-    margin: auto;
-
-  }
-
-  .hero-text p{
-
-    margin-inline: auto;
-
-  }
-
-  .hero-buttons{
-
-    justify-content: center;
-
-  }
-
-  /* MODAL */
-
-  .modal-box{
-
-    grid-template-columns: 1fr;
-
-    width: 94%;
-
-  }
-
-  .modal-image{
-
-    height: 320px;
-
-  }
-
-  /* ABOUT */
-
-  .tentang-wrapper{
-
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-
-  }
+  box-shadow:
+  0 12px 35px rgba(0,0,0,.35);
 
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* WRAPPER */
 
-@media (max-width: 768px){
+.nav-wrapper{
 
-  section{
+  display:flex;
 
-    padding: 80px 0;
+  flex-direction:column;
 
-  }
+  align-items:center;
 
-  .container{
+  justify-content:center;
 
-    width: 92%;
+  text-align:center;
 
-  }
-
-  /* =========================
-     PREMIUM MOBILE NAVBAR
-  ========================= */
-
-  .navbar{
-
-    top: 16px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 92%;
-
-    padding: 16px 22px;
-
-    border-radius: 24px;
-
-    background:
-      rgba(10,10,10,.78);
-
-    border:
-      1px solid rgba(255,255,255,.06);
-
-    backdrop-filter: blur(18px);
-
-    box-shadow:
-      0 12px 35px rgba(0,0,0,.35);
-
-  }
-
-  .nav-wrapper{
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-  }
-
-  .logo{
-
-    font-size: 1.15rem;
-
-    color: white;
-
-  }
-
-  .nav-menu{
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 16px;
-
-  }
-
-  .nav-menu a{
-
-    color:
-      rgba(255,255,255,.72);
-
-    font-size: .88rem;
-
-  }
-
-  .nav-menu a:hover{
-
-    color: white;
-
-  }
-
-  /* HIDE WA BUTTON */
-
-  .nav-btn{
-
-    display: none;
-
-  }
-
-  /* HERO */
-
-  .hero{
-
-    padding-top: 190px;
-
-  }
-
-  .hero-text h2{
-
-    font-size: 3rem;
-
-    line-height: 1.1;
-
-  }
-
-  .hero-text p{
-
-    font-size: .95rem;
-
-  }
-
-  .hero-buttons{
-
-    width: 100%;
-
-    justify-content: center;
-
-  }
-
-  .hero-btn-primary{
-
-    width: 100%;
-
-  }
-
-  .hero-image img{
-
-    max-width: 100%;
-
-  }
-
-  /* SEARCH */
-
-  .search-wrapper{
-
-    flex-direction: column;
-
-    gap: 16px;
-
-  }
-
-  .search-wrapper input,
-  .search-wrapper select{
-
-    width: 100%;
-
-  }
-
-  /* KATALOG */
-
-  .car-grid{
-
-    grid-template-columns: 1fr;
-
-    gap: 24px;
-
-  }
-
-  .car-image{
-
-    height: 220px;
-
-  }
-
-  /* MODAL */
-
-  .modal-content{
-
-    padding: 28px;
-
-  }
-
-  /* ABOUT */
-
-  .tentang-text{
-
-    text-align: center;
-
-  }
-
-  .tentang-text .hero-btn-primary{
-
-    width: 100%;
-
-  }
-
-  /* FOOTER */
-
-  .footer-wrapper{
-
-    text-align: center;
-
-  }
-
-  .footer-social{
-
-    justify-content: center;
-
-  }
+  gap:18px;
 
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* LOGO */
 
-@media (max-width: 480px){
+.logo{
 
-  .hero{
+  width:100%;
 
-    padding-top: 180px;
+  text-align:center;
 
-  }
+  font-size:1.2rem;
 
-  .hero-text h2{
+  color:white;
 
-    font-size: 2.4rem;
+  letter-spacing:3px;
 
-  }
+}
 
-  .section-title h2{
+/* MENU */
 
-    font-size: 2rem;
+.nav-menu{
 
-  }
+  width:100%;
 
-  .logo{
+  display:flex;
 
-    font-size: 1rem;
+  align-items:center;
 
-  }
+  justify-content:center;
 
-  .nav-menu{
+  gap:22px;
 
-    gap: 12px;
+  flex-wrap:wrap;
 
-  }
+  padding:0;
 
-  .nav-menu a{
+}
 
-    font-size: .82rem;
+.nav-menu li{
 
-  }
+  list-style:none;
+
+}
+
+.nav-menu a{
+
+  color:
+  rgba(255,255,255,.72);
+
+  font-size:.88rem;
+
+}
+
+.nav-menu a:hover{
+
+  color:white;
+
+}
+
+/* HIDE BUTTON */
+
+.nav-btn{
+
+  display:none;
 
 }
