@@ -1,3 +1,6 @@
+/* =========================
+   RESPONSIVE FIX (GLOBAL)
+========================= */
 @media (max-width: 992px) {
 
   .hero-wrapper {
@@ -37,75 +40,87 @@
   }
 }
 
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 768px) {
 
+  /* GLOBAL */
+  section {
+    padding: 60px 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /* NAVBAR */
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu a {
+    font-size: 14px;
+    padding: 6px 8px;
+    white-space: nowrap;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 18px;
+    padding: 20px 10px;
+  }
+
   .hero-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.2;
   }
 
   .hero-text p {
     font-size: 0.95rem;
-  }
-
-  .hero-wrapper {
-    padding: 20px 14px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-buttons button,
-  .hero-buttons a {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-
-  .about-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .about-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .about-image img {
-    width: 90%;
-    max-width: 340px;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .about-text {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-
-  .about-text p {
-    font-size: 0.95rem;
     line-height: 1.6;
     max-width: 90%;
     margin: auto;
   }
-}
-@media (max-width: 768px) {
 
+  .hero-image img {
+    width: 90%;
+    max-width: 360px;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons button,
+  .hero-buttons a {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  /* =========================
+     TENTANG (FIX UTAMA)
+  ========================= */
   .tentang-wrapper {
     display: flex;
     flex-direction: column;
@@ -113,12 +128,23 @@
     text-align: center;
   }
 
+  /* TEKS DULU */
+  .tentang-text {
+    order: 1;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* GAMBAR DI BAWAH */
   .tentang-image {
+    order: 2;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 16px;
   }
 
+  /* GAMBAR FULL (NGGAK KECIL) */
   .tentang-image img {
     width: 100%;
     max-width: 100%;
@@ -126,9 +152,43 @@
     border-radius: 12px;
   }
 
-  .tentang-text {
+  .tentang-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .tentang-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+@media (max-width: 480px) {
+
+  section {
+    padding: 50px 0;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-image img {
+    width: 80%;
+  }
+
+  .hero-buttons button,
+  .hero-buttons a {
     width: 100%;
-    padding: 0 16px;
+  }
+
+  .tentang-text h2 {
+    font-size: 1.7rem;
   }
 
 }
