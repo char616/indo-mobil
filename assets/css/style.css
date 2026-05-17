@@ -30,8 +30,9 @@ img{
   margin: auto;
 }
 
+/* 🔥 FIX JARAK TERLALU JAUH */
 section{
-  padding: 110px 0;
+  padding: 80px 0;
 }
 
 /* =========================
@@ -122,13 +123,71 @@ section{
 }
 
 /* =========================
+   HERO BUTTON FIX
+========================= */
+.hero-btn-primary {
+  display: inline-block;
+  padding: 14px 24px;
+
+  background: linear-gradient(135deg, #8f1d1d, #b62c2c);
+  color: #fff;
+
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   BUTTON TENTANG
+========================= */
+.tentang-text a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 20px;
+
+  background: linear-gradient(135deg, #8f1d1d, #b62c2c);
+  color: #fff;
+
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.tentang-text a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   FIX SPACING ANTAR SECTION
+========================= */
+.search-section{
+  padding-bottom: 30px;
+}
+
+.katalog{
+  margin-top: 0;
+}
+
+/* =========================
    MOBILE FIX FULL
 ========================= */
 @media (max-width: 768px) {
 
   /* GLOBAL */
   section{
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   body{
@@ -198,6 +257,18 @@ section{
     width: 90%;
     max-width: 280px;
   }
+
+  /* BUTTON CENTER */
+  .hero-btn-primary{
+    width: 90%;
+    text-align: center;
+  }
+
+  .tentang-text a{
+    width: 90%;
+    max-width: 280px;
+    text-align: center;
+  }
 }
 
 /* SMALL PHONE */
@@ -212,6 +283,19 @@ section{
   }
 
   section{
-    padding: 50px 0;
+    padding: 40px 0;
   }
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;   
+  height: auto;
+  object-fit: contain;
+  image-rendering: auto; 
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

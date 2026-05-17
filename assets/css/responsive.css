@@ -192,3 +192,12 @@
   }
 
 }
+@media (max-width: 768px) {
+
+  .tentang-text a {
+    width: 90%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+}
