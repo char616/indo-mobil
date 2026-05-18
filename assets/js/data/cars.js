@@ -115,6 +115,19 @@ export const cars = [
 
     description:
     'Mobil sport hybrid futuristik premium.'
+  },
+
+  {
+    id:10,
+    name:'BMW M3',
+    brand:'BMW',
+
+    price:'Rp 3.500.000.000',
+
+    image:'assets/images/cars/m3.jpg',
+
+    description:
+    'Mobil sport hybrid futuristik premium.'
   }
 
 ]
